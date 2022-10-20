@@ -26,6 +26,8 @@ terraform {
   backend "s3" {}
 }
 
+provider "aws" {}
+
 provider "proxmox" {
   pm_tls_insecure = true
 }

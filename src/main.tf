@@ -65,7 +65,6 @@ data "template_file" "user_data" {
     saltmaster            = var.SALTMASTER
     tags                  = join(" ", [ for key, value in local.tags : "\"Key=${key},Value=${value}\"" ])
   }
-}
 
 # #############################################################################
 # Send User Data for Cloud Init to Proxmox Host
