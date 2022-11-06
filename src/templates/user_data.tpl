@@ -98,6 +98,7 @@ salt_minion:
     log_level: info
     log_level_logfile: info
     saltenv: ${salt_environment}
+    pillarenv_from_saltenv: True
   grains:
     roles:
       - ${salt_role}
